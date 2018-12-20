@@ -2,7 +2,7 @@
 The purpose of this repo is to provide the scientific community with a package for analysing intensity statistics from data collected on [Dectris](https://www.dectris.com/) Eiger detectors.
 
 The package aims to
-  - Take a diffuse scatter dataset in hdf5-format as input (procedure [here](./examples/Eiger_diffuse_scatter.pdf))
+  - Take a diffuse scatter dataset in hdf5-format as input 
   - Access the frames via [ALBULA](https://www.dectris.com/products/albula-software)
   - Filter out pixels below and above thresholds
   - Sum all pixels on each frame and return the sums as a reduced dataset
@@ -13,6 +13,9 @@ The package aims to
 The app should ideally be run on a multi-core machine as summing a large number of frames (1000+) can be quite time consuming.
 
 Most of the underlying discussion happened at the High Data-Rate Macromolecular Crystallography [meeting](http://www.medsbio.org/meetings/AsCA_Dec18_HDRMX_Meeting.html) 6-7 December 2018, Auckland, New Zealand.
+
+## Data collection procedure
+A PDF of the procedure can be found [here](./DataCollectionProtocol/Eiger_diffuse_scatter.pdf)
 
 ## Installation
 ```
@@ -90,6 +93,9 @@ sys_settings:
 
 ## Example output
 [![image](./examples/speed_test_full_16M_master.h5_small.png)](./examples/speed_test_full_16M_master.h5.png)
+
+Please make sure to inspect your data as there are events that will adversely affect the data quality. For instance, a top-up shot as seen below.
+[![image](./examples/TopUp.png)](./examples/TopUp.png)
 
 ##### Files generated
 | File | Content |
