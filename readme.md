@@ -15,7 +15,7 @@ The app should ideally be run on a multi-core machine as summing a large number 
 Most of the underlying discussion happened at the High Data-Rate Macromolecular Crystallography [meeting](http://www.medsbio.org/meetings/AsCA_Dec18_HDRMX_Meeting.html) 6-7 December 2018, Auckland, New Zealand.
 
 ## Data collection procedure
-A PDF of the procedure can be found [here](./DataCollectionProtocol/Eiger_diffuse_scatter.pdf)
+A PDF of the procedure can be found [here](./DataCollectionProtocol/Eiger_Diffuse_Scatter.pdf)
 
 ## Installation
 ```
