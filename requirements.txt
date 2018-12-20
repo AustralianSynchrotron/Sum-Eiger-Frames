@@ -1,0 +1,8 @@
+scipy==1.0.0
+plotly==3.4.2
+Logbook==1.1.0
+numpy==1.14.0
+pandas==0.22.0
+cufflinks==0.14.6
+PyYAML==3.13
+#redis==2.10.6

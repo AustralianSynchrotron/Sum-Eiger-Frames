@@ -1,0 +1,22 @@
+in:
+  master: /staff/eiger/data/speed_test_full_16M_master.h5
+  start: 0                     #First frame to process
+  end:  400                    #Last frame to process. Leave as 0 for all
+
+filter:                        #Anything lower or higher than is masked out
+  low: 0
+  high: 4500
+
+out:
+  file: True                    #Write out results to file
+  path: /tmp/                   #Needs trailing slash
+  plot: True                    #Analyse and plot data
+  redis: False                  #Post results to redis key
+  prefix: summed_eiger_frames   #Redis key prefix
+  expire: 1                     #redis key time-to-live in days
+
+sys_settings:
+  albula_path: /staff/eiger/dectris/albula/3.2/python/
+  redis_ip: 10.108.24.9
+  threads: 4
+
